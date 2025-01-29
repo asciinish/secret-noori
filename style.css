@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: #f07fa5;
+  font-family: "Single Day", cursive;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.header__wrapper {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  z-index: 9999;
+}
+
+.question {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 3px #e44862;
+  margin-bottom: 20px;
+}
+
+.header__text__wrapper {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 3px #e44862;
+  margin-bottom: 40px;
+}
+
+.frame {
+  position: absolute;
+  top: -235px;
+  left: -201px;
+  width: 174%;
+  z-index: -99;
+}
+
+.frameSecond {
+  position: absolute;
+  top: -298px;
+  left: -197px;
+  width: 170%;
+  z-index: -99;
+}
+
+.frameThird {
+  position: absolute;
+  bottom: -134px;
+  left: 450px;
+  width: 100px;
+  z-index: 99999;
+}
+
+.btn__wrapper {
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.yes__btn {
+  width: 150px;
+  height: 40px;
+  background-color: #f5c8d7;
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 2px 2px 3px #e44862;
+  border: 2px solid #f71c65;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.no__btn {
+  width: 150px;
+  height: 40px;
+  background-color: #f5c8d7;
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 2px 2px 3px #e44862;
+  border: 2px solid #f71c65;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.yes__btn:hover,
+.no__btn:hover {
+  background-color: #f71c65;
+  border: 2px solid #f5c8d7;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img__wrapper {
+  padding: 20px;
+  margin-bottom: 5rem;
+  background-color: #f07fa5;
+  position: relative;
+  box-shadow: 10px 10px 42px 0 rgba(0, 0, 0, 0.75);
+}
+
+.img__wrapper img {
+  width: 60rem;
+  border: 7px solid #e44862;
+}

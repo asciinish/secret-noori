@@ -1,6 +1,6 @@
 const yesBtn = document.querySelector(".yes__btn");
 const noBtn = document.querySelector(".no__btn");
-const themeSound = new Audio("/assets/sounds/main.mp3");
+const themeSound = new Audio("main.mp3");
 
 noBtn.addEventListener("click", () => {
   themeSound.play();
